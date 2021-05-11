@@ -1,0 +1,57 @@
+
+STUDENT_NO 217260217
+
+package ds4;
+import java.util.*;
+
+public class Rectangle {
+    int length;
+    int width;
+    
+   public Rectangle(){
+       length = 0;
+       width = 0;
+   }
+    public Rectangle(int l, int w){
+        length = l;
+        width = w;
+    }
+    
+    public void input_attributes(){
+        Scanner console = new Scanner(System.in);
+        System.out.println("Enter the length of a rectangle : ");
+        length = console.nextInt();
+        System.out.println("Enter the width of a rectangle : ");
+        width = console.nextInt();
+    }
+    
+    public int calc_area(){
+    return length * width;
+    }
+    
+    public int calc_perimeter(){
+      return 2 * (length + width);
+        
+    }
+    public void output_results(){
+        System.out.println("The Area of a rectangle is " + calc_area());
+        System.out.println("The perimeter of a rectangle is " + calc_perimeter());
+    }
+    
+}
+
+
+public class NewMain {
+    
+    public static void main(String[] args){
+    Rectangle r1 = new Rectangle(40, 30);
+    r1.output_results();
+    
+        Rectangle r2 = new Rectangle();
+        r2.input_attributes();
+        r2.output_results();
+   
+}
+
+    
+}
