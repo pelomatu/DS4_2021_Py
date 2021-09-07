@@ -1,8 +1,6 @@
 MANTU PHELOKAZI
 STUDENT NO.217260217
 
-
-
 import java.util.*;
 public class NewMain {
 
