@@ -1,0 +1,65 @@
+MANTU PHELOKAZI
+STUDENT NO.217260217
+
+
+
+import java.util.*;
+public class NewMain {
+
+    public static void main(String[] args) {
+            
+          Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number");
+        int num = sc.nextInt();
+    }
+    
+    public static int factIter(){
+        int r;
+        int n1 = 0;
+        if (n1>=0) {
+             r = 1;
+             int i;
+            for (i=1; i<=n1; i++){r=r*r;}
+            return r;
+        }
+       else return 0;
+    }
+    
+    public static int factRec(){
+        int n = 0;
+        int n1 = 0;
+        if(n1>=0) {
+
+        if (n1==0 ||  n1==1){
+        return 1;
+        }        
+        return n * factRec();
+        
+        }   
+        return 0;
+    }
+    
+    public static int mess(){
+    
+        while (true){
+            Scanner s = new Scanner(System.in);
+            System.out.println("enter  mess");
+            int ms = s.nextInt();
+            System.out.println("enter Numbers");
+            int n = s.nextInt();
+                if (n >=0){
+                    n = (ms);
+                    int i = factIter();
+                    int r = factRec();
+                    int mess;
+                    mess = i + n + r;
+                    System.out.println("The factorial is:" + mess);
+                } 
+        }
+            
+            
+            
+
+    }
+    
+}
